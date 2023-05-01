@@ -4,10 +4,12 @@
     box-sizing: border-box;
     font-family: "Roboto", "Helvetica", "Arial", sans-serif;
 }
+
 :root {
     --padding: 15px;
     --color: crimson;
 }
+
 .wrapper {
     width: 100vw;
     height: 100vh;
@@ -17,6 +19,7 @@
     align-items: center;
     gap: 20px;
 }
+
 .inputsContainer {
     width: 20%;
     display: flex;
@@ -25,16 +28,20 @@
     align-items: center;
     gap: 20px;
 }
-#name, #getName {
+
+#name,
+#getName {
     height: 30px;
     outline: none;
     font-size: 16px;
     border: 1px solid gray;
 }
+
 #name {
     padding: var(--padding);
     color: var(----color);
 }
+
 #getName {
     width: 120px;
     background-color: var(--color);
@@ -42,11 +49,46 @@
     border: none;
     border-radius: 4px;
 }
+
 #resultText {
-    width: 30%;
+    width: 40%;
     border-radius: 4px;
     border: 1px solid gray;
     height: auto;
     padding: var(--padding);
     color: var(--color);
+}
+
+@media (max-width: 1100px) {
+    #resultText {
+        width: 50%;
+    }
+}
+
+@media (max-width: 835px) {
+    #resultText {
+        width: 60%;
+    }
+}
+
+@media (max-width: 680px) {
+    #resultText {
+        width: 70%;
+    }
+}
+
+@media (max-width: 539px) {
+    #resultText {
+        width: 90%;
+    }
+}
+
+@media (max-width: 449px) {
+    #resultText {
+        width: 95%;
+    }
+
+    #name {
+        width: 200px;
+    }
 }
